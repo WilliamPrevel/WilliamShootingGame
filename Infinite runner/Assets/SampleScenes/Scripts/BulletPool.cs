@@ -33,7 +33,7 @@ public class BulletPool : MonoBehaviour
     {
         for (int i = 0; i < pooledObjects.Count; i++)
         {
-            if (!pooledObjects[i].activeInHierarchy)
+            if (pooledObjects[i] && !pooledObjects[i].activeInHierarchy)
             {
                 return pooledObjects[i];
             }

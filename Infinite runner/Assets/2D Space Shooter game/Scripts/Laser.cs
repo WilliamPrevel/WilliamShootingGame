@@ -10,8 +10,17 @@ public class Laser : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        RB.velocity = -transform.up * Speed;
+        //RB.velocity = -transform.up * Speed;
 	}
+
+    void OnEnable()
+    {
+        RB.velocity = -transform.up * Speed;
+    }
+    //private void OnEnable()
+    //{
+        
+    //}
 
     private void OnTriggerEnter2D(Collider2D HitInfo)
     {
@@ -20,7 +29,8 @@ public class Laser : MonoBehaviour {
         {
             enemy.TakeDamage(Damage);
         }
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        //Destroy(gameObject);
     }
 
 
