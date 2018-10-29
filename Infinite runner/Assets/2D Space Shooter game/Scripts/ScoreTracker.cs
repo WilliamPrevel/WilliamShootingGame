@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class ScoreTracker : MonoBehaviour
 {
-
     public Text ScoreText;
 
     // Update is called once per frame

@@ -70,7 +70,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 100
-  deathEffect: {fileID: 0}
 --- !u!114 &114978539938851304
 MonoBehaviour:
   m_ObjectHideFlags: 1
