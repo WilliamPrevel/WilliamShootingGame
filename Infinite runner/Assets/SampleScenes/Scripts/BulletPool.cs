@@ -39,8 +39,9 @@ public class BulletPool : MonoBehaviour
             }
         }
         GameObject obj = (GameObject)Instantiate(objectToPool);
-        obj.SetActive(false);
+        obj.SetActive(false); 
         pooledObjects.Add(obj);
         return obj;
+
     }
 }
