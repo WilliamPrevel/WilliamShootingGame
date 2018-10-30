@@ -3,13 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
+{
+    public GameObject SmallEnemy;
+    public GameObject BigEnemy;
 
-
-
-{ // Prefab to spawn
-    public GameObject spawnee;
-
-    // Use this for initialization
     void Start()
     {
         StartCoroutine(SpawnTimer());
@@ -20,16 +17,24 @@ public class Spawner : MonoBehaviour
         while (true)
         {
             Spawn();
+            spawnBig();
             yield return new WaitForSeconds(1f);
         }
     }
 
     void Spawn()
     {
-        float randomY = Random.Range(8f, 12f);
+        float randomY = Random.Range(6f, 11f);
         float randomX = Random.Range(-8.4f, 9.4f);
-        //for (int i = 0; i < 1; i++)
+        
+        Instantiate(SmallEnemy, new Vector3(randomX, randomY, 1), Quaternion.identity);
+    }
 
-        Instantiate(spawnee, new Vector3(randomX, randomY, 1), Quaternion.identity);
+    void spawnBig()
+    {
+        float randomY = Random.Range(12f, 15f);
+        float randomX = Random.Range(-10f, 14f);
+
+        Instantiate(BigEnemy, new Vector3(randomX, randomY, 0), Quaternion.identity);
     }
 }
