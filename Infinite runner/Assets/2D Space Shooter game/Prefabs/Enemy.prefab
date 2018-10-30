@@ -71,6 +71,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 100
+  destroyPoint: {fileID: 1020282377027916, guid: 42a327b5c00e96143bfcf74bb7485deb,
+    type: 2}
 --- !u!114 &114425670910092958
 MonoBehaviour:
   m_ObjectHideFlags: 1

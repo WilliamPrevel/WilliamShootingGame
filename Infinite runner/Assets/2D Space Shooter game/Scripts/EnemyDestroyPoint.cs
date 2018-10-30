@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour {
+public class EnemyDestroyPoint : MonoBehaviour {
 
 
     //Public Variables
@@ -19,7 +19,7 @@ public class NewBehaviourScript : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < theEnemyDestroyPoint.transform.position.y)
+        if (transform.position.y > theEnemyDestroyPoint.transform.position.y)
         {
             // Destroy(gameObject);
             gameObject.SetActive(false);
