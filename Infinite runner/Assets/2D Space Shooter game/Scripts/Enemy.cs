@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour {
 
     public static int player_score = 0;
     public int Health = 100;
+    public GameObject destroyPoint;
 
     public void TakeDamage (int damage)
     {
@@ -15,11 +16,14 @@ public class Enemy : MonoBehaviour {
         {
             Die();
         }
+        
+
     }
 
      void Die()
     {
         player_score += 15;
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        //Destroy(gameObject);
     }
 }

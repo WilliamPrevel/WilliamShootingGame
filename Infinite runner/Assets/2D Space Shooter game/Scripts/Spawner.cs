@@ -6,6 +6,7 @@ public class Spawner : MonoBehaviour
 {
     public GameObject SmallEnemy;
     public GameObject BigEnemy;
+    public EnemyPoolA theEnemyPoolA;
 
     void Start()
     {
@@ -26,8 +27,9 @@ public class Spawner : MonoBehaviour
     {
         float randomY = Random.Range(6f, 11f);
         float randomX = Random.Range(-8.4f, 9.4f);
-        
+
         Instantiate(SmallEnemy, new Vector3(randomX, randomY, 1), Quaternion.identity);
+        
     }
 
     void spawnBig()
@@ -35,6 +37,9 @@ public class Spawner : MonoBehaviour
         float randomY = Random.Range(12f, 15f);
         float randomX = Random.Range(-10f, 14f);
 
-        Instantiate(BigEnemy, new Vector3(randomX, randomY, 0), Quaternion.identity);
+        //Instantiate(BigEnemy, new Vector3(randomX, randomY, 0), Quaternion.identity);
+        GameObject newEnemyA = theEnemyPoolA.GetPooledObject();
+        newEnemyA.transform.position = new Vector3(randomX, randomY, 1);
+        newEnemyA.SetActive(true);
     }
 }
