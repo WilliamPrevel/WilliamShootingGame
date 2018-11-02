@@ -17,7 +17,7 @@ public class weapon : MonoBehaviour {
         }
 	}
 
-    public virtual void Shoot()
+    void Shoot()
     {
         //Instantiate(laserPrefab, firePoint.position, firePoint.rotation);
         GameObject newBullet = theBulletPool.GetPooledObject();

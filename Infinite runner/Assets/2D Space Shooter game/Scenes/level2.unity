@@ -555,7 +555,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SmallEnemy: {fileID: 1317597255052110, guid: 4efe0e596d379884d94472a19f940cc2, type: 2}
   BigEnemy: {fileID: 1858525606960032, guid: a6e84d6bdef6a2d44a1c35cc92462c78, type: 2}
-  SmartEnemy: {fileID: 0}
 --- !u!4 &995864293
 Transform:
   m_ObjectHideFlags: 0
@@ -668,6 +667,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1359979465028908, guid: 7b99877acfa7fd64ea1c1a54330ccf11,
     type: 2}
   m_PrefabInternal: {fileID: 46306507}
+--- !u!58 &1414550193
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1414550184}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.16, y: 0.31}
+  serializedVersion: 2
+  m_Radius: 1.09
 --- !u!114 &1414550194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -713,7 +727,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 88fb9ee8781f9bb42b2f758ca3801a48, type: 2}
+  - {fileID: 2100000, guid: 58896ae7f81185e43ac0d25077695ae7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

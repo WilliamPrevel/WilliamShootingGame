@@ -219,34 +219,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 49879725}
   m_CullTransparentMesh: 0
---- !u!1 &88845316
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 88845317}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &88845317
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 88845316}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 319.27698, y: 298.14774, z: -193.897}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &185263376
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +391,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   SmartEnemy: {fileID: 1550981897829548, guid: 48b90634ba5e1874090347b2078273b3, type: 2}
 =======
   theEnemyPoolA: {fileID: 1983692805}
@@ -432,6 +405,8 @@ MonoBehaviour:
 =======
   theEnemyPoolA: {fileID: 1983692805}
 >>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
+=======
+>>>>>>> parent of d108919... made a smart AI
 --- !u!4 &626449385
 Transform:
   m_ObjectHideFlags: 0
@@ -443,7 +418,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &647444911
 GameObject:
@@ -556,7 +531,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1931068569}
+<<<<<<< HEAD
   - {fileID: 1468517196}
+=======
+>>>>>>> parent of d108919... made a smart AI
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -735,10 +713,9 @@ GameObject:
   - component: {fileID: 1414550186}
   - component: {fileID: 1414550191}
   - component: {fileID: 1414550192}
-  - component: {fileID: 1414550193}
   m_Layer: 0
   m_Name: SpacePlayer
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -881,6 +858,7 @@ MonoBehaviour:
     type: 2}
   theBulletPool: {fileID: 1939971312}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &1414550193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,6 +901,8 @@ Transform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> parent of 5a94933... Stuff
+=======
+>>>>>>> parent of d108919... made a smart AI
 --- !u!1 &1931068568
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,7 +925,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1931068568}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 14.3, z: 2}
+  m_LocalPosition: {x: 0, y: 44.4, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 691415995}
@@ -1081,6 +1061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xVelocity: 0
   yVelocity: 0.3
+<<<<<<< HEAD
 --- !u!1 &1983692804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,6 +1106,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of d108919... made a smart AI
 --- !u!1 &2114187424
 GameObject:
   m_ObjectHideFlags: 0

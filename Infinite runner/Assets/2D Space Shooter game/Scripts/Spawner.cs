@@ -10,6 +10,7 @@ public class Spawner : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public GameObject SmartEnemy;
 =======
     public EnemyPoolA theEnemyPoolA;
@@ -23,6 +24,8 @@ public class Spawner : MonoBehaviour
 =======
     public EnemyPoolA theEnemyPoolA;
 >>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
+=======
+>>>>>>> parent of d108919... made a smart AI
 
     void Start()
     {
@@ -34,9 +37,8 @@ public class Spawner : MonoBehaviour
         while (true)
         {
             Spawn();
-            SpawnBig();
-            SpawnSmart();
-            yield return new WaitForSeconds(4f);
+            spawnBig();
+            yield return new WaitForSeconds(1f);
         }
     }
 
@@ -44,9 +46,8 @@ public class Spawner : MonoBehaviour
     {
         float randomY = Random.Range(6f, 11f);
         float randomX = Random.Range(-8.4f, 9.4f);
-
-        Instantiate(SmallEnemy, new Vector3(randomX, randomY, 1), Quaternion.identity);
         
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -67,13 +68,17 @@ public class Spawner : MonoBehaviour
 >>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
 =======
 >>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
+=======
+        Instantiate(SmallEnemy, new Vector3(randomX, randomY, 1), Quaternion.identity);
+>>>>>>> parent of d108919... made a smart AI
     }
 
-    void SpawnSmart()
+    void spawnBig()
     {
         float randomY = Random.Range(12f, 15f);
         float randomX = Random.Range(-10f, 14f);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -94,5 +99,8 @@ public class Spawner : MonoBehaviour
 >>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
 =======
 >>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
+=======
+        Instantiate(BigEnemy, new Vector3(randomX, randomY, 0), Quaternion.identity);
+>>>>>>> parent of d108919... made a smart AI
     }
 }
