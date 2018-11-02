@@ -6,7 +6,6 @@ public class Spawner : MonoBehaviour
 {
     public GameObject SmallEnemy;
     public GameObject BigEnemy;
-
     public GameObject SmartEnemy;
 
     void Start()

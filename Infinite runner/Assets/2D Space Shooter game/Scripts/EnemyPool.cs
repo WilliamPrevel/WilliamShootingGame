@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyPoolA : MonoBehaviour {
+public class EnemyPool : MonoBehaviour {
 
     public List<GameObject> pooledObjects;
     public GameObject objectToPool;
     public int amountToPool;
 
-    public static EnemyPoolA SharedInstance;
+    public static EnemyPool SharedInstance;
 
     void Awake()
     {
