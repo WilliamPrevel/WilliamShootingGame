@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
     }
     private void Update()
     {
-        if (transform.position.y <= -DestroyPointOnYAxis)
+        if (transform.position.y <= DestroyPointOnYAxis)
         {
             Destroy(gameObject);
         }
