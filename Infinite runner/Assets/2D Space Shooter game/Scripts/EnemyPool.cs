@@ -5,7 +5,9 @@ using UnityEngine;
 public class EnemyPool : MonoBehaviour {
 
     public List<GameObject> pooledObjects;
-    public GameObject objectToPool;
+    public GameObject objectToPoolA;
+    public GameObject objectToPoolB;
+    public GameObject objectToPoolC;
     public int amountToPool;
 
     public static EnemyPool SharedInstance;
@@ -20,7 +22,13 @@ public class EnemyPool : MonoBehaviour {
         pooledObjects = new List<GameObject>();
         for (int i = 0; i < amountToPool; i++)
         {
-            GameObject obj = (GameObject)Instantiate(objectToPool);
+            GameObject obj = (GameObject)Instantiate(objectToPoolA);
+            obj.SetActive(false);
+            pooledObjects.Add(obj);
+            obj = (GameObject)Instantiate(objectToPoolB);
+            obj.SetActive(false);
+            pooledObjects.Add(obj);
+            obj = (GameObject)Instantiate(objectToPoolC);
             obj.SetActive(false);
             pooledObjects.Add(obj);
         }
@@ -28,16 +36,32 @@ public class EnemyPool : MonoBehaviour {
 
     }
 
-    public GameObject GetPooledObject()
+    public GameObject GetPooledObject(string tag)
     {
         for (int i = 0; i < pooledObjects.Count; i++)
         {
-            if (pooledObjects[i] && !pooledObjects[i].activeInHierarchy)
+            if (pooledObjects[i] && !pooledObjects[i].activeInHierarchy && pooledObjects[i].tag == tag)
             {
                 return pooledObjects[i];
             }
         }
-        GameObject obj = (GameObject)Instantiate(objectToPool);
+        GameObject blah = null;
+        if(tag == objectToPoolA.tag)
+        {
+            blah = objectToPoolA;
+        }
+        else if(tag == objectToPoolB.tag)
+        {
+            blah = objectToPoolB;
+
+        }
+        else
+        {
+            blah = objectToPoolC;
+
+        }
+
+        GameObject obj = (GameObject)Instantiate(blah);
         obj.SetActive(false);
         pooledObjects.Add(obj);
         return obj;

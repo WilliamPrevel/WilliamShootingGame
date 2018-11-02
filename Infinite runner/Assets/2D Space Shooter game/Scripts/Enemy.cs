@@ -18,17 +18,10 @@ public class Enemy : MonoBehaviour
             Die();
         }
     }
-    private void Update()
-    {
-        if (transform.position.y <= DestroyPointOnYAxis)
-        {
-            Destroy(gameObject);
-        }
-    }
 
     void Die()
     {
         player_score += ScoreWorth;
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
