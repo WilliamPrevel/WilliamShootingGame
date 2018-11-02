@@ -989,7 +989,7 @@ MonoBehaviour:
   pooledObjects: []
   objectToPool: {fileID: 1921315825940262, guid: 0232045d862cf45408ed23adece4b102,
     type: 2}
-  amountToPool: 20
+  amountToPool: 100
 --- !u!4 &1939971313
 Transform:
   m_ObjectHideFlags: 0

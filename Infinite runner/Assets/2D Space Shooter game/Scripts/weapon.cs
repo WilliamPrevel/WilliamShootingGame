@@ -23,7 +23,6 @@ public class weapon : MonoBehaviour {
         GameObject newBullet = theBulletPool.GetPooledObject();
         newBullet.transform.position = firePoint.position;
         newBullet.SetActive(true);
-        
     }
 
 }

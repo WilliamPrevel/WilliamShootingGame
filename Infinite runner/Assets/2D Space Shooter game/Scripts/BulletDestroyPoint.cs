@@ -22,7 +22,6 @@ public class BulletDestroyPoint : MonoBehaviour {
         {
             // Destroy(gameObject);
             gameObject.SetActive(false);
-
         }
 
     }
