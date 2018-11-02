@@ -6,6 +6,15 @@ public class Spawner : MonoBehaviour
 {
     public GameObject SmallEnemy;
     public GameObject BigEnemy;
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public GameObject SmartEnemy;
+=======
+    public EnemyPoolA theEnemyPoolA;
+>>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
+=======
+    public EnemyPoolA theEnemyPoolA;
+>>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
 
     void Start()
     {
@@ -17,8 +26,9 @@ public class Spawner : MonoBehaviour
         while (true)
         {
             Spawn();
-            spawnBig();
-            yield return new WaitForSeconds(1f);
+            SpawnBig();
+            SpawnSmart();
+            yield return new WaitForSeconds(4f);
         }
     }
 
@@ -26,15 +36,37 @@ public class Spawner : MonoBehaviour
     {
         float randomY = Random.Range(6f, 11f);
         float randomX = Random.Range(-8.4f, 9.4f);
-        
+
         Instantiate(SmallEnemy, new Vector3(randomX, randomY, 1), Quaternion.identity);
+        
+<<<<<<< HEAD
     }
 
-    void spawnBig()
+    void SpawnBig()
     {
         float randomY = Random.Range(12f, 15f);
         float randomX = Random.Range(-10f, 14f);
 
-        Instantiate(BigEnemy, new Vector3(randomX, randomY, 0), Quaternion.identity);
+        //Instantiate(BigEnemy, new Vector3(randomX, randomY, 0), Quaternion.identity);
+        GameObject newEnemyA = theEnemyPoolA.GetPooledObject();
+        newEnemyA.transform.position = new Vector3(randomX, randomY, 1);
+        newEnemyA.SetActive(true);
+=======
+>>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
+    }
+
+    void SpawnSmart()
+    {
+        float randomY = Random.Range(12f, 15f);
+        float randomX = Random.Range(-10f, 14f);
+
+<<<<<<< HEAD
+        Instantiate(SmartEnemy, new Vector3(randomX, randomY, 0), Quaternion.identity);
+=======
+        //Instantiate(BigEnemy, new Vector3(randomX, randomY, 0), Quaternion.identity);
+        GameObject newEnemyA = theEnemyPoolA.GetPooledObject();
+        newEnemyA.transform.position = new Vector3(randomX, randomY, 1);
+        newEnemyA.SetActive(true);
+>>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
     }
 }

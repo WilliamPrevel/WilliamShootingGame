@@ -70,6 +70,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 100
+  destroyPoint: {fileID: 1020282377027916, guid: 42a327b5c00e96143bfcf74bb7485deb,
+    type: 2}
 --- !u!114 &114916864101700896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81,7 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5cc5af481492cb448cfe21455aab713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallSpeed: 5
+  fallSpeed: 6
   spinSpeed: 0
 --- !u!212 &212348888599247532
 SpriteRenderer:
