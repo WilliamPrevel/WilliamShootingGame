@@ -9,7 +9,11 @@ public class Spawner : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public GameObject SmartEnemy;
+=======
+    public EnemyPoolA theEnemyPoolA;
+>>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
 =======
     public EnemyPoolA theEnemyPoolA;
 >>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
@@ -45,6 +49,7 @@ public class Spawner : MonoBehaviour
         
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     }
 
     void SpawnBig()
@@ -60,6 +65,8 @@ public class Spawner : MonoBehaviour
 >>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
 =======
 >>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
+=======
+>>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
     }
 
     void SpawnSmart()
@@ -69,8 +76,11 @@ public class Spawner : MonoBehaviour
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Instantiate(SmartEnemy, new Vector3(randomX, randomY, 0), Quaternion.identity);
 =======
+=======
+>>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
 =======
 >>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
         //Instantiate(BigEnemy, new Vector3(randomX, randomY, 0), Quaternion.identity);
@@ -78,6 +88,9 @@ public class Spawner : MonoBehaviour
         newEnemyA.transform.position = new Vector3(randomX, randomY, 1);
         newEnemyA.SetActive(true);
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
+=======
 >>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
 =======
 >>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca

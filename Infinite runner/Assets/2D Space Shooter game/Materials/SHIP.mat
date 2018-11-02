@@ -44,7 +44,11 @@ Material:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_Offset: {x: 0.6, y: 0}
+=======
+        m_Offset: {x: 0, y: 0.5}
+>>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
 =======
         m_Offset: {x: 0, y: 0.5}
 >>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
