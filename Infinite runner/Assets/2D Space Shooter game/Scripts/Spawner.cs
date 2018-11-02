@@ -28,7 +28,7 @@ public class Spawner : MonoBehaviour
 
     void Spawn(GameObject enemy)
     {
-        float randomY = Random.Range(6f, 11f);
+        float randomY = Random.Range(6f, 19f);
         float randomX = Random.Range(-8.4f, 9.4f);
 
         GameObject newEnemy = thePool.GetPooledObject(enemy.tag);
