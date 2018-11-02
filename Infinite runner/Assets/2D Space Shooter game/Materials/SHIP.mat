@@ -45,6 +45,7 @@ Material:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_Offset: {x: 0.6, y: 0}
 =======
         m_Offset: {x: 0, y: 0.5}
@@ -58,6 +59,9 @@ Material:
 =======
         m_Offset: {x: 0, y: 0.5}
 >>>>>>> 5a949333d1802c4269f84596d7dc7fffd610d2ca
+=======
+        m_Offset: {x: 0.2, y: 0}
+>>>>>>> parent of 5a94933... Stuff
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
