@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 58127584462787616}
   m_Layer: 0
   m_Name: enemy-big
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,9 +69,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd7e6397df45dc4f88ffbe3a64da877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScoreWorth: 15
   Health: 100
-  destroyPoint: {fileID: 1020282377027916, guid: 42a327b5c00e96143bfcf74bb7485deb,
-    type: 2}
+  DestroyPointOnYAxis: -10
 --- !u!114 &114916864101700896
 MonoBehaviour:
   m_ObjectHideFlags: 1
