@@ -319,6 +319,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &260965472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 260965473}
+  m_Layer: 0
+  m_Name: EnemyDestroyPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &260965473
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 260965472}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.63, y: -9.91, z: 1.9989388}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &582454697
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,6 +356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 582454699}
   - component: {fileID: 582454698}
+  - component: {fileID: 582454700}
   m_Layer: 0
   m_Name: Pool
   m_TagString: Untagged
@@ -363,6 +392,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &582454700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 582454697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb1e8f216e994147bd0e1301a715755, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjects: []
+  objectToPoolA: {fileID: 1317597255052110, guid: 4efe0e596d379884d94472a19f940cc2,
+    type: 2}
+  objectToPoolB: {fileID: 1858525606960032, guid: a6e84d6bdef6a2d44a1c35cc92462c78,
+    type: 2}
+  objectToPoolC: {fileID: 1550981897829548, guid: 48b90634ba5e1874090347b2078273b3,
+    type: 2}
+  amountToPool: 10
 --- !u!1 &691415991
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,6 +621,7 @@ MonoBehaviour:
   SmallEnemy: {fileID: 1317597255052110, guid: 4efe0e596d379884d94472a19f940cc2, type: 2}
   BigEnemy: {fileID: 1858525606960032, guid: a6e84d6bdef6a2d44a1c35cc92462c78, type: 2}
   SmartEnemy: {fileID: 1550981897829548, guid: 48b90634ba5e1874090347b2078273b3, type: 2}
+  thePool: {fileID: 582454700}
 --- !u!4 &995864293
 Transform:
   m_ObjectHideFlags: 0

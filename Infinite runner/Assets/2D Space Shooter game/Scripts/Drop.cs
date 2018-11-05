@@ -13,7 +13,7 @@ public class Drop : MonoBehaviour
     {
 
         transform.Translate(Vector3.down * fallSpeed * Time.deltaTime, Space.World);
-        transform.Rotate(Vector3.forward, spinSpeed * Time.deltaTime);
+        transform.Rotate(Vector3.forward, fallSpeed * Time.deltaTime);
 
     }
 }
