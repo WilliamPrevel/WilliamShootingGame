@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114916864101700896}
   - component: {fileID: 114572676505301124}
   - component: {fileID: 58127584462787616}
+  - component: {fileID: 114249331490285660}
   m_Layer: 0
   m_Name: enemy-big
   m_TagString: Untagged
@@ -58,6 +59,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.17
+--- !u!114 &114249331490285660
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1858525606960032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eea7f59539b6ea459b2b7e4ad4858b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  StopDistance: 0
+  LeaveDistance: 0
 --- !u!114 &114572676505301124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -69,9 +84,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd7e6397df45dc4f88ffbe3a64da877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScoreWorth: 15
   Health: 100
-  destroyPoint: {fileID: 1020282377027916, guid: 42a327b5c00e96143bfcf74bb7485deb,
-    type: 2}
+  DestroyPointOnYAxis: -10
 --- !u!114 &114916864101700896
 MonoBehaviour:
   m_ObjectHideFlags: 1
